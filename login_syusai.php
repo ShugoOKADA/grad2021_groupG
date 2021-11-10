@@ -12,13 +12,13 @@
   <!-- Section-->
   <section class="container py-5">
     <div class="">
-    <form method="$_POST" action="top.php">
-    <p> 月 日で人数は 人で のイベントを開催します。<br>
-    抽選方法は です。
-    </p>
-    
-  <p><input class="btn btn-success" type="submit" value="OK"></p>  
+    <form method="$_POST" action="select_syusai.php">
+      <h2>会員確認</h2>
+    <p>e-mail：<input class="form-control" type="text"></p>
+    <p>パスワードを入力してください: <input class="form-control" type="text"></p>
+    <p><input class="btn btn-success" type="submit" value="OK"></p>
   </form>
     </div>
   </section>
+  <!-- Footer-->
   <?php require_once("footer.php"); ?>
