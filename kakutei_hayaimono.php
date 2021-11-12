@@ -7,7 +7,7 @@
                         <tr><th>予約番号</th><td><?php echo $reserveNo; ?></td></tr>
                     </table>
 
-                    <input type="button" onclick="location.href='./kakunin_hayaimono.php'" value="OK">
+                    <input type="button" onclick="location.href='top.php'" value="OK">
         </section>
         <!-- Footer-->
 <?php require_once ("footer.php"); ?>

@@ -14,9 +14,11 @@
 <section class="container py-5">
   <div class="">
     <form method="$_POST" action="kakunin_yoyaku.php">
-     <p><input class="btn btn-success" type="submit" value="取り消し"></p>
-     <p><input class="btn btn-success" type="submit" value="取り消し"></p>
-     <p><input class="btn btn-success" type="submit" value="取り消し"></p>
+      <h1>予約一覧</h1>
+
+     <p>花火大会<input class="btn btn-success" type="submit" value="取り消し"></p>
+     <p>花見<input class="btn btn-success" type="submit" value="取り消し"></p>
+     <p>運動会<input class="btn btn-success" type="submit" value="取り消し"></p>
     </form>
   </div>
 </section>
