@@ -6,5 +6,7 @@
         <p>email：<input class="form-control" type="text" name="address"></p>
         <p>パスワードを設定して下さい(アルファベットと数字を合わせて4文字〜8文字)：<input class="form-control" type="password" name="password"></p>
         <p>パスワード確認のためもう一度入力して下さい：<input class="form-control" type="password" name="password"></p>
+        <input type="button" onclick="location.href='tourokukakunin_syusai.php'" value="OK">
+        <input type="button" onclick="location.href='top_syusai.php'" value="戻る">
         </section>
 <?php require_once ("footer.php"); ?>

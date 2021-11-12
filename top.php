@@ -70,7 +70,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="kyaku_top.php">予約</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="kyaku_top.php">予約はこちら</a></div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="top_syusai.php">イベントを開く</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="top_syusai.php">イベント登録はこちら</a></div>
                             </div>
                             </div>
                         </div>

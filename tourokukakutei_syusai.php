@@ -6,5 +6,5 @@
     <input type="button" class="btn btn-success" onclick="location.href='./top_syusai.php'" value="OK">
     
         </section>
-       
+
      <?php require_once("footer.php");?>

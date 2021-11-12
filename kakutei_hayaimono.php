@@ -8,6 +8,7 @@
                     </table>
 
                     <input type="button" class="btn btn-success" onclick="location.href='./kakunin_hayaimono.php'" value="OK">
+
         </section>
         <!-- Footer-->
 <?php require_once ("footer.php"); ?>
