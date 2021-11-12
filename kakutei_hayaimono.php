@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -61,7 +61,8 @@
                         <tr><th>予約番号</th><td><?php echo $reserveNo; ?></td></tr>
                     </table>
 
-                    <input type="button" onclick="location.href='./kakunin_hayaimono.php'" value="OK">
+                    <p><input type="btn btn-success onclick="location.href='./kakunin_hayaimono.php'" value="OK"></p>
+                
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
