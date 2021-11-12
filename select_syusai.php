@@ -11,7 +11,7 @@
             <input type="date" name="" id="">
             <p>スペース</p>
             <input type="text" name="" id=""></br>
-            <input type="button" onclick="location.href='./houhou_syusai.php'" value="OK">
+            <input type="button" class="btn btn-success" onclick="location.href='./houhou_syusai.php'" value="OK">
     
         </section>
        
