@@ -3,8 +3,8 @@
         <section class="py-5">
         <p>座席番号　番でよろしいでしょうか？</p>
 
-    <input type="button" onclick="location.href='./kakutei_hayaimono.php'" value="確定">
-    <input type="button" onclick="history.back()" value="戻る">
+    <input type="button" class="form-control" onclick="location.href='./kakutei_hayaimono.php'" value="確定">
+    <input type="button" class="form-control" onclick="history.back()" value="戻る">
     
         </section>
        
