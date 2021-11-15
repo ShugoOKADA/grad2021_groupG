@@ -13,12 +13,12 @@
 <!-- Section-->
 <section class="container py-5">
   <div class="">
-    <form method="$_POST" action="seki_hayaimono.php">
-      <p>お名前：<input class="form-control" type="text"></p>
-      <p>email: <input class="form-control" type="text"></p>
-      <p>パスワードを設定してください: <input class="form-control" type="text"></p>
-      <p>確認のためもう1度パスワードを入力してください:<input class="form-control" type="text"></p>
-      <p><input class="btn btn-success" type="submit" value="OK"></p>
+    <form method="$_POST" action="kakunin_yoyaku.php">
+      <h1>予約一覧</h1>
+
+     <p>花火大会<input class="btn btn-success" type="submit" value="取り消し"></p>
+     <p>花見<input class="btn btn-success" type="submit" value="取り消し"></p>
+     <p>運動会<input class="btn btn-success" type="submit" value="取り消し"></p>
     </form>
   </div>
 </section>

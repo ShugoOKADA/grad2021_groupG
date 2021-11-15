@@ -11,7 +11,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
@@ -53,7 +53,7 @@
             </div>
         </header>
         <!-- Section-->
-        <section class="py-5">
+        <section class="py-5" >
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
@@ -70,7 +70,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="kyaku_top.php">予約</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="kyaku_top.php">予約はこちら</a></div>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="top_syusai.php">イベントを開く</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="top_syusai.php">イベント登録はこちら</a></div>
                             </div>
                             </div>
                         </div>
