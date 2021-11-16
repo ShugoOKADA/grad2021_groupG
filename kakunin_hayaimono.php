@@ -1,5 +1,4 @@
 <?php require_once("header.php");?>
-<!-- Section-->
         <section class="py-5">
         <p>座席番号　番でよろしいでしょうか？</p>
 

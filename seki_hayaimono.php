@@ -5,6 +5,7 @@ if (!is_null($c)) {
   print "選択された座席:" . implode(",", $c) . "<br>";
 }
 ?>
+
 <!-- Section-->
 <section class="py-5">
   <table class="btn-group btn-group-toggle" data-toggle="buttons">
