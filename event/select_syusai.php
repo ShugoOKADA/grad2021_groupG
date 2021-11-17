@@ -1,4 +1,4 @@
-<?php require_once("header.php");?>
+<?php require_once("../header.php");?>
 <!-- Section-->
         <section class="py-5">
         <p>開催するイベント</p>
@@ -15,4 +15,4 @@
     
         </section>
        
-     <?php require_once("footer.php");?>
+     <?php require_once("../footer.php");?>

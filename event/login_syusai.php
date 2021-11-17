@@ -1,4 +1,4 @@
-<?php require_once("header.php"); ?>
+<?php require_once("../header.php"); ?>
   <!-- Header
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
@@ -21,4 +21,4 @@
     </div>
   </section>
   <!-- Footer-->
-  <?php require_once("footer.php"); ?>
+  <?php require_once("../footer.php"); ?>

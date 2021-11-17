@@ -1,4 +1,4 @@
-<?php require_once ("header.php"); ?>
+<?php require_once ("../header.php"); ?>
         <section class="py-5">
         <form action="hanabi.php" method="post">
         <p>名前を入力してください：<input class="form-control" type="text" name="user"></p>
@@ -7,5 +7,5 @@
         <p>確認のためもう1度パスワードを入力してください：<input class="form-control" type="password" name="password"></p>
         <button type="submit" class="btn btn-success"><a href="pass_error.php">OK</a></button>
         </section>
-<?php require_once ("footer.php"); ?>
+<?php require_once ("../footer.php"); ?>
 

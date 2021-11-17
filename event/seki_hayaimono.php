@@ -1,5 +1,5 @@
 <?PHP
-require_once("header.php");
+require_once("../header.php");
 $c = filter_input(INPUT_GET, "c", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
 if (!is_null($c)) {
   print "選択された座席:" . implode(",", $c) . "<br>";
@@ -33,40 +33,40 @@ if (!is_null($c)) {
       <td><a href="kakunin_hayaimono.php"><input type="submit" value="確認"></td>
     </tr>
   </table>
-  
-    <script type="text/javascript">
-      window.addEventListener('DOMContentLoaded', function(e) {
-        document.querySelector('#f1').addEventListener('submit', function(e) {
-          var c = [].map.call(document.querySelectorAll('[name="c[]"]:checked'), function(x) {
-            return x.value;
-          }).join(",");
-          if (c === "") {
-            alert("座席を選択してください。");
+
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function(e) {
+      document.querySelector('#f1').addEventListener('submit', function(e) {
+        var c = [].map.call(document.querySelectorAll('[name="c[]"]:checked'), function(x) {
+          return x.value;
+        }).join(",");
+        if (c === "") {
+          alert("座席を選択してください。");
+          e.preventDefault();
+        } else {
+          if (!confirm(c + " が選択されています。よろしいですか?")) {
             e.preventDefault();
-          } else {
-            if (!confirm(c + " が選択されています。よろしいですか?")) {
-              e.preventDefault();
-            }
           }
-        });
-        [].forEach.call(document.querySelectorAll('.cx'), function(x) {
-          x.addEventListener('click', function(e) {
-            var t = e.target;
-            var n = document.querySelector('#c' + t.value);
-            n.checked = !n.checked;
-          });
+        }
+      });
+      [].forEach.call(document.querySelectorAll('.cx'), function(x) {
+        x.addEventListener('click', function(e) {
+          var t = e.target;
+          var n = document.querySelector('#c' + t.value);
+          n.checked = !n.checked;
         });
       });
-    </script>
-    <style>
-      [name="c[]"] {
-        display: none;
-      }
+    });
+  </script>
+  <style>
+    [name="c[]"] {
+      display: none;
+    }
 
-      [name="c[]"]:checked+.cx {
-        background-Color: skyblue;
-      }
-    </style>
+    [name="c[]"]:checked+.cx {
+      background-Color: skyblue;
+    }
+  </style>
 </section>
 <!-- Footer-->
-<?php require_once("footer.php"); ?>
+<?php require_once("../footer.php"); ?>
