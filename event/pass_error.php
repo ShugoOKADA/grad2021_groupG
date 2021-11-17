@@ -1,4 +1,4 @@
-<?php require_once ("header.php"); ?>
+<?php require_once ("../header.php"); ?>
         <section class="py-5">
         <form action="hanabi.php" method="post">
         <p>名前を入力してください：<input class="form-control" type="text" name="user"></p>
@@ -9,4 +9,4 @@
         <button type="submit" class="btn btn-success"><a href="hanabi2.php">OK</a></button>
         </section>
         <!-- Footer-->
-<?php require_once ("footer.php"); ?>
+<?php require_once ("../footer.php"); ?>

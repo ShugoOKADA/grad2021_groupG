@@ -1,4 +1,4 @@
-<?php require_once ("header.php"); ?>
+<?php require_once ("../header.php"); ?>
         <section class="py-5">
         <form action="hanabi.php" method="post">
         <p>会員登録</p>
@@ -9,4 +9,4 @@
         <input type="button" class="btn btn-success" onclick="location.href='tourokukakunin_syusai.php'" value="OK">
         <input type="button" class="btn btn-success" onclick="location.href='top_syusai.php'" value="戻る">
         </section>
-<?php require_once ("footer.php"); ?>
+<?php require_once ("../footer.php"); ?>

@@ -2,11 +2,11 @@
 
 if($_POST['address']=='hoge@gmail.com'){
 
-    header("location: ./seki_hayaimono.php");
+    header("location: ./zyuhuku.php");
 
 } else {
 
-    header("location: ./zyuhuku.php");
+    header("location: ./seki_hayaimono.php"); 
 
 }
 

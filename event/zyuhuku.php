@@ -1,4 +1,4 @@
-<?php require_once("header.php");?>
+<?php require_once("../header.php");?>
 <!-- Section-->
         <section class="py-5">
         <p>もうすでに予約されているため予約することはできません。</p>
@@ -7,4 +7,4 @@
     
         </section>
        
-     <?php require_once("footer.php");?>
+     <?php require_once("../footer.php");?>
