@@ -7,7 +7,7 @@
                         <tr><th>予約番号</th><td>xxxx</td></tr>
                     </table>
 
-                    <input type="button" class="btn btn-success" onclick="location.href='./top.php'" value="OK">
+                    <input type="button" class="btn btn-success" onclick="location.href='../top.php'" value="OK">
 
         </section>
         <!-- Footer-->

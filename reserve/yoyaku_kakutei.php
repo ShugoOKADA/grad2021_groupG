@@ -3,7 +3,7 @@
         <section class="py-5">
         <p> への内容の予約を取り消しました。</p>
 
-    <input type="button" class="btn btn-success" onclick="location.href='./top.php'" value="TOPへ">
+    <input type="button" class="btn btn-success" onclick="location.href='../top.php'" value="TOPへ">
     
         </section>
        
