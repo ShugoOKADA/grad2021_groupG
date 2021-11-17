@@ -5,7 +5,8 @@
         <p>email：<input class="form-control" type="text" name="address"></p>
         <p>パスワード：<input class="form-control" type="password" name="password"></p>
         <p>確認のためもう1度パスワードを入力してください：<input class="form-control" type="password" name="password"></p>
-        <button type="submit" class="btn btn-success"><a href="touroku_check.php">OK</a></button>
+        <button type="submit" class="btn btn-success">OK</a></button>
         </section>
 <?php require_once ("../footer.php"); ?>
+
 
