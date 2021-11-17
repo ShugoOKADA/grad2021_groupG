@@ -1,5 +1,5 @@
 <?PHP
-require_once("header.php");
+require_once("../header.php");
 $c = filter_input(INPUT_GET, "c", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
 if (!is_null($c)) {
   print "選択された座席:" . implode(",", $c) . "<br>";
@@ -69,4 +69,4 @@ if (!is_null($c)) {
     </style>
 </section>
 <!-- Footer-->
-<?php require_once("footer.php"); ?>
+<?php require_once("../footer.php"); ?>

@@ -1,4 +1,4 @@
-<?php require_once("header.php");?>
+<?php require_once("../header.php");?>
 <!-- Section-->
         <section class="py-5">
         <p>名前</p><br>
@@ -12,4 +12,4 @@
     
         </section>
        
-     <?php require_once("footer.php");?>
+     <?php require_once("../footer.php");?>
