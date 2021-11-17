@@ -1,4 +1,4 @@
-<?php require_once ("header.php"); ?>
+<?php require_once ("../header.php"); ?>
         <section class="py-5">
         <h1>予約完了</h1>
                     <p>予約が完了しました。以下の予約番号を控えおいてください。</p>
@@ -11,4 +11,4 @@
 
         </section>
         <!-- Footer-->
-<?php require_once ("footer.php"); ?>
+<?php require_once ("../footer.php"); ?>

@@ -4,4 +4,4 @@ if($_POST['address']=='hoge@gmail.com'){
 } else {
     header("location: ./login_error.php");
 }
-?>
+?>r readfile
