@@ -6,7 +6,8 @@
         <p>パスワード：<input class="form-control" type="password" name="password"></p>
         <p>確認のためもう1度パスワードを入力してください：<input class="form-control" type="password" name="password"></p>
         <p>(※パスワードはアルファベットと数字を合わせて、4文字〜8文字で入力して下さい)</p>
-        <button type="submit" class="btn btn-success"><a href="touroku_check.php">OK</a></button>
+        <input type="submit" class="btn btn-success" value="OK"> 
+</form>
         </section>
         <!-- Footer-->
 <?php require_once ("../footer.php"); ?>
