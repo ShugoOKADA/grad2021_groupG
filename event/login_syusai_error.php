@@ -16,6 +16,7 @@
       <h2>会員確認</h2>
     <p>e-mail：<input class="form-control" type="text" name="address"></p>
     <p>パスワードを入力してください: <input class="form-control" type="text"></p>
+    <p>パスワードが間違っています。</p>
     <p><input class="btn btn-success" type="submit" value="OK"></p>
   </form>
     </div>
