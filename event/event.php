@@ -5,7 +5,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="hanabi.jpeg" alt="..." />
+                            <img class="card-img-top" src="../koba.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -24,7 +24,7 @@
                         <div class="card h-100">
                             <!-- Sale badge-->
                             <!-- Product image-->
-                            <img class="card-img-top" src="hanami.jpeg" alt="..." />
+                            <img class="card-img-top" src="../koba.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -44,7 +44,7 @@
                         <div class="card h-100">
                             <!-- Sale badge-->
                             <!-- Product image-->
-                            <img class="card-img-top" src="undoukai.jpeg" alt="..." />
+                            <img class="card-img-top" src="../koba.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
