@@ -1,4 +1,4 @@
-<?php require_once("../header.php"); ?>
+<?php require_once("header.php"); ?>
 <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -16,7 +16,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="login.php">予約一覧</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="reserve/login.php">予約一覧</a></div>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="event.php">イベント一覧</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="event/event.php">イベント一覧</a></div>
                             </div>
                             </div>
                         </div>
@@ -41,4 +41,4 @@
                 </div>
             </div>
         </section>
-        <?php require_once("../footer.php"); ?>
+        <?php require_once("footer.php"); ?>

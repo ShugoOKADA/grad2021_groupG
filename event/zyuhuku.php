@@ -3,7 +3,7 @@
         <section class="py-5">
         <p>もうすでに予約されているため予約することはできません。</p>
 
-    <input type="button" class="btn btn-success" onclick="location.href='./top.php'" value="OK">
+    <input type="button" class="btn btn-success" onclick="location.href='../top.php'" value="OK">
     
         </section>
        

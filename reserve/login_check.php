@@ -1,7 +1,7 @@
 <?php
 if($_POST['address']=='hoge@gmail.com'){
-    header("location: ./itiran_yoyaku.php");
+    header("location: /grad2021_groupG/reserve/itiran_yoyaku.php");
 } else {
-    header("location: ./login_error.php");
+    header("location: /grad2021_groupG/reserve/login_error.php");
 }
-?>r readfile
+?>
