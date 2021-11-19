@@ -12,7 +12,7 @@
   <!-- Section-->
   <section class="container py-5">
     <div class="">
-    <form method="$_POST" action="../top.php">
+    <form method="$_POST" action="./event_tsuika.php">
     <p> 月 日で人数は 人で のイベントを開催します。<br>
     抽選方法は です。
     </p>
