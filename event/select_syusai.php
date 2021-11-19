@@ -1,18 +1,26 @@
 <?php require_once("../header.php");?>
 <!-- Section-->
         <section class="py-5">
-        <p>開催するイベント</p>
-            <select name= "event">
-            <option value = "花火大会">花火大会</option>
-            <option value = "花見">花見</option>
-            <option value = "運動会">運動会</option>
-        </select>
-            <p>日付</p>
-            <input type="date" name="" id="">
-            <p>スペース</p>
-            <input type="text" name="" id=""></br>
-            <input type="button" class="btn btn-success" onclick="location.href='./houhou_syusai.php'" value="OK">
-    
+            <form action="kakunin_syusai.php" method="post">
+                <p>開催するイベント</p>
+                <input type="text" name="name">
+                <p>日付</p>
+                <input type="date" name="date" id="">
+                <p>スペース</p>
+                <input type="number" name="size" id=""></br>
+                <p>抽選方法</p>
+                <p>予約方法をお選び下さい</p>
+                <input type="radio" name="method" value="1">早い者勝ち
+                <input type="radio" name="method" value="2">抽選<br><br>
+                <p>画像</p>
+                <input type="text" name="image">
+                <input type="submit" class="btn btn-success" value="確認">
+            </form>
+            <form action="up.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="fname">
+                <input type="submit" class="btn btn-success" value="アップロード">
+            </form>
+            
         </section>
        
      <?php require_once("../footer.php");?>

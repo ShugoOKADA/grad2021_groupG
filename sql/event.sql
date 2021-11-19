@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2021-11-19 02:54:39
+-- 生成日時: 2021-11-19 06:08:39
 -- サーバのバージョン： 10.4.11-MariaDB
 -- PHP のバージョン: 7.4.6
 
@@ -33,7 +33,7 @@ CREATE TABLE `event` (
   `date` date NOT NULL,
   `size` int(11) NOT NULL,
   `method` int(11) NOT NULL,
-  `image` varchar(64) NOT NULL
+  `image` varchar(64) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -42,7 +42,10 @@ CREATE TABLE `event` (
 
 INSERT INTO `event` (`id`, `name`, `date`, `size`, `method`, `image`) VALUES
 (1, '柏小運動会', '2021-11-29', 100, 1, 'testimage.jpg'),
-(2, '柏中学校', '2021-11-20', 110, 1, 'test_2image.jpg');
+(2, '柏中学校', '2021-11-20', 110, 1, 'test_2image.jpg'),
+(3, '柏中学校', '2021-11-20', 110, 1, 'test_2image.jpg'),
+(4, '竹井一馬', '2021-11-11', 1, 2, 'test.jpg'),
+(5, '映画ドラえもん のび太の新恐竜', '2021-11-26', 1, 1, '');
 
 --
 -- ダンプしたテーブルのインデックス
@@ -62,7 +65,7 @@ ALTER TABLE `event`
 -- テーブルのAUTO_INCREMENT `event`
 --
 ALTER TABLE `event`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

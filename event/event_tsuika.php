@@ -7,11 +7,11 @@ if ($link == null) {
     echo "接続に成功しました：";
 }
 
-$name = "柏中学校";
-$date = "2021-11-20";
-$size = 110;
-$method = 1;
-$image = "test_2image.jpg";
+$name = $_POST['name'];
+$date = $_POST['date'];
+$size = $_POST['size'];
+$method = $_POST['method'];
+$image = $_POST['image'];
 $sql = "INSERT INTO event (name, date, size, method, image) VALUES ('" . $name . "','" . $date . "'," . $size . "," . $method . ",'" . $image . "')";
 mysqli_query($link, $sql);
 

@@ -12,10 +12,9 @@
   <!-- Section-->
   <section class="container py-5">
     <div class="">
-    <form method="$_POST" action="./event_tsuika.php">
-    <p> 月 日で人数は 人で のイベントを開催します。<br>
-    抽選方法は です。
-    </p>
+    <form action="event_tsuika.php" method="post">
+    <p>開催するイベントは<?=$_POST['name'] ?><br>日付は<?=$_POST['date'] ?><br>スペースは<?=$_POST['size'] ?><br>
+    予約方法は<br><?=$_POST['gender'] ?>で<br>よろしいでしょうか</p>
     
   <p><input class="btn btn-success" type="submit" value="OK"></p>  
   </form>
