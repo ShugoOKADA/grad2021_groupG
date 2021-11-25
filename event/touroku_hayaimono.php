@@ -14,7 +14,8 @@
 <section class="container py-5">
   <div class="">
     <form method="$_POST" action="seki_hayaimono.php">
-      <p>お名前：<input class="form-control" type="text"></p>
+      <input type="hidden" name="id" value=<?=$_GET['num'] ?>>
+      <p>お名前：<input class="form-control" type="text" name=""></p>
       <p>email: <input class="form-control" type="text"></p>
       <p>パスワードを設定してください: <input class="form-control" type="text"></p>
       <p>確認のためもう1度パスワードを入力してください:<input class="form-control" type="text"></p>

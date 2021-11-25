@@ -3,7 +3,7 @@
         <section class="py-5">
                 <form action="login_check.php" method="POST">
                 <p>email：<input class="form-control" type="text" name="address"></p>
-        <p>パスワード：<input class="form-control" type="password" name="password"></p>
+                <p>パスワード：<input class="form-control" type="password" name="password"></p>
                         <input type="submit" class="btn btn-success" value="OK">
                 </form>
         <!-- <p>email：<input class="form-control" type="text" name="address"></p>
