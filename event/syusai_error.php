@@ -1,6 +1,7 @@
 <?php require_once ("../header.php"); ?>
         <section class="py-5">
         <form action="syusai_check.php" method="post">
+        <p>会員登録</p>
         <p>名前を入力してください：<input class="form-control" type="text" name="user"></p>
         <p>email：<input class="form-control" type="text" name="address"></p>
         <p>パスワード：<input class="form-control" type="password" name="password"></p>
