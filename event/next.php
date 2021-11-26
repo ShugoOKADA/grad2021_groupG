@@ -27,6 +27,9 @@
     mysqli_free_result($result);
     mysqli_close($link);
     ?>
+    <form action="../top.php" method="post">
+    <input type="submit" class="btn btn-success" value="TOPへ">
+    </form>
 </body>
 
 </html>
