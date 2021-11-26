@@ -14,11 +14,20 @@
 <section class="container py-5">
   <div class="">
     <form method="$_POST" action="kakunin_yoyaku.php">
+    <?php
+                    $link = mysqli_connect("localhost", "sotsuken", "sotsukenpass", "sotsuken");
+                    if ($link == null) {
+                        die("接続に失敗しました");
+                    }
+                    mysqli_set_charset($link, "utf8");
+                    $result = mysqli_query($link, "select event.name from reserve inner join event on reserve.eventId = event.id where mail='".$_GET['address']."'");
+                    ?>
       <h1>予約一覧</h1>
-
-     <p>花火大会<input class="btn btn-success" type="submit" value="取り消し"></p>
-     <p>花見<input class="btn btn-success" type="submit" value="取り消し"></p>
-     <p>運動会<input class="btn btn-success" type="submit" value="取り消し"></p>
+    <?php while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) { ?>
+     <p><?=$row['name'] ?><input class="btn btn-success" type="submit" value="取り消し"></p>
+    <?php }
+      mysqli_free_result($result);
+      mysqli_close($link); ?>
     </form>
   </div>
 </section>
