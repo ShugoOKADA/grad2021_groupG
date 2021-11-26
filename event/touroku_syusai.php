@@ -5,7 +5,7 @@
         <p>名前を入力してください：<input class="form-control" type="text" name="user"></p>
         <p>email：<input class="form-control" type="text" name="address"></p>
         <p>パスワードを設定して下さい(アルファベットと数字を合わせて4文字〜8文字)：<input class="form-control" type="password" name="password"></p>
-        <p>パスワード確認のためもう一度入力して下さい：<input class="form-control" type="password" name="password"></p>
+        <p>確認のためもう1度パスワードを入力してください：<input class="form-control" type="password" name="password"></p>
         <input type="submit" class="btn btn-success" value="OK">
         <input type="button" class="btn btn-success" onclick="location.href='top_syusai.php'" value="戻る">
 </form>
