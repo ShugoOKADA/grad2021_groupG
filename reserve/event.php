@@ -15,7 +15,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="../koba.jpg" alt="..." />
+                            <img class="card-img-top" src="../undoukai.jpeg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -38,7 +38,7 @@
                         <div class="card h-100">
                             <!-- Sale badge-->
                             <!-- Product image-->
-                            <img class="card-img-top" src="../koba.jpg" alt="..." />
+                            <img class="card-img-top" src="../hanami.jpeg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -58,12 +58,12 @@
                         <div class="card h-100">
                             <!-- Sale badge-->
                             <!-- Product image-->
-                            <img class="card-img-top" src="../koba.jpg" alt="..." />
+                            <img class="card-img-top" src="../hanabi.jpeg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">運動会</h5>
+                                    <h5 class="fw-bolder">花火</h5>
                                     <!-- Product price-->
                                 </div>
                             </div>
