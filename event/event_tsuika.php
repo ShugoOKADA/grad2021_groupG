@@ -17,4 +17,4 @@ mysqli_query($link, $sql);
 
 mysqli_close($link);
 ?>
-<a href="./next.php">次へ</a>
+<a href="../top.php">TOPへ</a>
