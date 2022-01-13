@@ -12,7 +12,8 @@ $date = $_POST['date'];
 $size = $_POST['size'];
 $method = $_POST['method'];
 $image = $_POST['image'];
-$sql = "INSERT INTO event (name, date, size, method, image) VALUES ('" . $name . "','" . $date . "'," . $size . "," . $method . ",'" . $image . "')";
+$address = $_POST['address'];
+$sql = "INSERT INTO event (name, date, size, method, image, address) VALUES ('" . $name . "','" . $date . "'," . $size . "," . $method . ",'" . $image . "','" . $address . "')";
 mysqli_query($link, $sql);
 
 mysqli_close($link);

@@ -36,6 +36,13 @@
                     <!-- 繰り返しここまで -->
                     
                 </div>
-            </div>
-        </section>
-        <?php require_once("../footer.php"); ?>
+            <!-- 繰り返しここまで -->
+        </div>
+        <!-- Product actions-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<?php require_once("../footer.php"); ?>

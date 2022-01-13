@@ -1,4 +1,4 @@
-<?php require_once("../header.php");?>
+<?php require_once("../header.php"); ?>
 <!-- Section-->
         <section class="py-5">
             <form action="kakunin_syusai.php" method="post">
@@ -25,3 +25,4 @@
         </section>
        
      <?php require_once("../footer.php");?>
+
