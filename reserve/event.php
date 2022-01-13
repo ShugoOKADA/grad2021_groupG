@@ -15,7 +15,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="../undoukai.jpeg" alt="..." />
+                            <img class="card-img-top" src="../image/<?= $row['image'] ?>" alt="" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -34,50 +34,7 @@
                         mysqli_free_result($result);
                           mysqli_close($link); ?>
                     <!-- 繰り返しここまで -->
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <!-- Product image-->
-                            <img class="card-img-top" src="../hanami.jpeg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">花見</h5>
-                                    <!-- Product reviews-->
-                                    <!-- Product price-->
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="touroku.php?eventId=1">開く</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <!-- Product image-->
-                            <img class="card-img-top" src="../hanabi.jpeg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">花火</h5>
-                                    <!-- Product price-->
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="touroku.php?num=1">開く</a></div>
-                            </div>
-                        </div>
-                    </div>
-                            </div>
-                            <!-- Product actions-->
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

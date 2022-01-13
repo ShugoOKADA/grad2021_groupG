@@ -7,7 +7,8 @@
                 <p>日付</p>
                 <input type="date" name="date" id="">
                 <p>スペース</p>
-                <input type="number" name="size" id=""></br>
+                <p>縦</p><input type="number" name="size" id=""></br>
+                <p>横</p><input type="number" name="size" id=""></br>
                 <p>抽選方法</p>
                 <p>予約方法をお選び下さい</p>
                 <input type="radio" name="method" value="1">早い者勝ち

@@ -16,7 +16,7 @@
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="event/touroku_syusai.php">新規登録</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="event/touroku_syusai.php">新規ユーザー登録</a></div>
                     </div>
                 </div>
             </div>
