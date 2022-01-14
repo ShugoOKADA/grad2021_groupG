@@ -1,6 +1,6 @@
 <?php require_once ("../header.php"); ?>
         <!-- Section-->
-        <section class="py-5">
+        <section class="container py-5">
                 <form action="login_check.php" method="POST">
                 <p>email：<input class="form-control" type="text" name="address"></p>
                 <p>パスワード：<input class="form-control" type="password" name="password"></p>

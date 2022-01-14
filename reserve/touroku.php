@@ -1,5 +1,5 @@
 <?php require_once ("../header.php"); ?>
-        <section class="py-5">
+        <section class="container py-5">
         <form action="touroku_check.php" method="post">
         <input type="hidden" name="eventId" value="<?=$_GET['eventId'] ?>">  
         <p>名前を入力してください：<input class="form-control" type="text" name="name"></p>
