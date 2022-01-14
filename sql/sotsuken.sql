@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2022-01-13 06:26:39
+-- 生成日時: 2022-01-14 07:25:57
 -- サーバのバージョン： 10.4.11-MariaDB
 -- PHP のバージョン: 7.4.6
 
@@ -73,6 +73,26 @@ INSERT INTO `reserve` (`id`, `name`, `mail`, `pass`, `eventId`, `number`) VALUES
 (9, '小林　大雅', 'koba@gmail.com', 'hsaa', 3, 3),
 (22, 'コバヤシタイガ', 'hoge@gmail.com', 'aaa', 24, 1);
 
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `userlist`
+--
+
+CREATE TABLE `userlist` (
+  `id` int(11) NOT NULL,
+  `mail` varchar(256) DEFAULT NULL,
+  `pass` varchar(64) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- テーブルのデータのダンプ `userlist`
+--
+
+INSERT INTO `userlist` (`id`, `mail`, `pass`) VALUES
+(1, 'hoge@gmail.com', 'hogepass'),
+(2, 'fuji@gmail.com', 'fujipass');
+
 --
 -- ダンプしたテーブルのインデックス
 --
@@ -90,6 +110,12 @@ ALTER TABLE `reserve`
   ADD PRIMARY KEY (`id`);
 
 --
+-- テーブルのインデックス `userlist`
+--
+ALTER TABLE `userlist`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- ダンプしたテーブルのAUTO_INCREMENT
 --
 
@@ -104,6 +130,12 @@ ALTER TABLE `event`
 --
 ALTER TABLE `reserve`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- テーブルのAUTO_INCREMENT `userlist`
+--
+ALTER TABLE `userlist`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
