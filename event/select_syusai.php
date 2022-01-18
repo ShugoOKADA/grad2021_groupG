@@ -1,5 +1,6 @@
 <?php require_once("../header.php"); ?>
 <!-- Section-->
+
 <section class="container py-5">
     <form action="kakunin_syusai.php?address=<?= $_GET['address'] ?>" method="post">
         <p>開催するイベント</p>

@@ -1,18 +1,27 @@
 <?php
+$link = mysqli_connect("localhost", "sotsuken", "sotsukenpass", "sotsuken");
 
-if($_POST['mail']=='hoge@gmail.com' || $_POST['mail']=='piyo@gmail.com' || $_POST['mail']=='koba@gmail.com'){
-
-    $msg = "location: /grad2021_groupG/reserve/seki_hayaimono.php?eventId=".$_POST['eventId']."&name=".$_POST['name']."&mail=".$_POST['mail']."&password=".$_POST['password'];
-    header($msg);
-
-} else if ($_POST['mail']=='poyo@gmail.com') {
-
-    header("location: ./zyuhuku.php");
-    
+if ($link == null) {
+    echo "接続に失敗しました：";
 } else {
-
-    header("location: ./pass_error.php");
-
+    echo "接続に成功しました：";
 }
 
-?>
+$name = $_POST['name'];
+$mail = $_POST['address'];
+$pass = $_POST['password'];
+
+$sql = "INSERT INTO userlist(name, mail, pass) VALUES('" . $name . "','" . $mail . "','" . $pass . "')";
+
+
+$result = mysqli_query($link, $sql);
+
+mysqli_close($link);
+if ($result) {
+
+    $msg = "location: /grad2021_groupG/reserve/seki_hayaimono.php";
+    header($msg);
+} else {
+
+    header("location: ./touroku_syusai.php");
+}

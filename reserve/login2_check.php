@@ -1,11 +1,29 @@
 <?php
-if($_POST['address']=='hoge@gmail.com' || $_POST['address']=='piyo@gmail.com' || $_POST['address']=='koba@gmail.com'){
+
+$link = mysqli_connect("localhost", "sotsuken", "sotsukenpass", "sotsuken");
+
+if ($link == null) {
+    echo "接続に失敗しました：";
+} else {
+    echo "接続に成功しました：";
+}
+
+$mail = $_POST['address'];
+$pass = $_POST['password'];
+
+$sql = "SELECT pass FROM userlist WHERE mail = '" . $mail . "'";
+
+
+$result = mysqli_query($link, $sql);
+$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+$pass = $row['pass'];
+
+if($_POST['password'] == $pass ||$_POST['address']=='hoge@gmail.com' || $_POST['address']=='piyo@gmail.com' || $_POST['address']=='koba@gmail.com'){
 
     $msg = "location: /grad2021_groupG/event/event_itiran.php?address=".$_POST['address'];
     header($msg);
 
 } else {
-    
-    header("location: /grad2021_groupG/reserve/login2_error.php");
+    print($pass);
 }
-?>
+mysqli_close($link);

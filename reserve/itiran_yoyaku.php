@@ -13,22 +13,22 @@
 <!-- Section-->
 <section class="container py-5">
   <div class="">
-    <form method="$_POST" action="kakunin_yoyaku.php">
+    <!-- <form method="$_POST" action="kakunin_yoyaku.php"> -->
     <?php
                     $link = mysqli_connect("localhost", "sotsuken", "sotsukenpass", "sotsuken");
                     if ($link == null) {
                         die("接続に失敗しました");
                     }
                     mysqli_set_charset($link, "utf8");
-                    $result = mysqli_query($link, "select event.name from reserve inner join event on reserve.eventId = event.id where mail='".$_GET['address']."'");
+                    $result = mysqli_query($link, "select event.name, event.id from reserve inner join event on reserve.eventId = event.id where mail='".$_GET['address']."'");
                     ?>
       <h1>予約一覧</h1>
     <?php while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) { ?>
-     <p><?=$row['name'] ?><input class="btn btn-success" type="submit" value="取り消し"></p>
+     <p><?=$row['name'] ?><a href="kakunin_yoyaku.php?id=<?=$row['id']?>&mail=<?=$_GET['address']?>"><input class="btn btn-success" type="submit" value="取り消し"></a></p>
     <?php }
       mysqli_free_result($result);
       mysqli_close($link); ?>
-    </form>
+    <!-- </form> -->
   </div>
 </section>
 
