@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2022-01-14 07:25:57
+-- 生成日時: 2022-01-18 08:06:19
 -- サーバのバージョン： 10.4.11-MariaDB
 -- PHP のバージョン: 7.4.6
 
@@ -45,7 +45,8 @@ INSERT INTO `event` (`id`, `name`, `date`, `size`, `method`, `image`, `address`)
 (1, '流山北運動会', '2021-12-01', 49, 1, '', 'hoge@gmail.com'),
 (24, '柏運動会', '2022-01-21', 56, 1, '', 'piyo@gmail.com'),
 (25, '柏運動会', '2022-01-20', 10, 1, 'a.jpg', 'hoge@gmail.com'),
-(26, '流山花火', '2022-01-14', 10, 1, '', 'hoge@gmail.com');
+(26, '流山花火', '2022-01-14', 10, 1, '', 'hoge@gmail.com'),
+(27, '馬橋高校運動会', '2022-01-20', 9, 1, '', 'hoge@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -81,6 +82,7 @@ INSERT INTO `reserve` (`id`, `name`, `mail`, `pass`, `eventId`, `number`) VALUES
 
 CREATE TABLE `userlist` (
   `id` int(11) NOT NULL,
+  `name` varchar(64) DEFAULT NULL,
   `mail` varchar(256) DEFAULT NULL,
   `pass` varchar(64) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -89,9 +91,12 @@ CREATE TABLE `userlist` (
 -- テーブルのデータのダンプ `userlist`
 --
 
-INSERT INTO `userlist` (`id`, `mail`, `pass`) VALUES
-(1, 'hoge@gmail.com', 'hogepass'),
-(2, 'fuji@gmail.com', 'fujipass');
+INSERT INTO `userlist` (`id`, `name`, `mail`, `pass`) VALUES
+(1, 'ほげ', 'hoge@gmail.com', 'hogepass'),
+(2, 'ふじ', 'fuji@gmail.com', 'fujipass'),
+(3, 'ふじしろ', 'fuji@gmail.com', 'fujipass'),
+(4, 'ふじしろ', '', 'fujipass'),
+(5, '藤代翔', '', 'fujipass');
 
 --
 -- ダンプしたテーブルのインデックス
@@ -123,7 +128,7 @@ ALTER TABLE `userlist`
 -- テーブルのAUTO_INCREMENT `event`
 --
 ALTER TABLE `event`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- テーブルのAUTO_INCREMENT `reserve`
@@ -135,7 +140,7 @@ ALTER TABLE `reserve`
 -- テーブルのAUTO_INCREMENT `userlist`
 --
 ALTER TABLE `userlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
