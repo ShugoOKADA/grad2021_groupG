@@ -30,16 +30,16 @@ if (!is_null($c)) {
       <td><input type="checkbox" name="c[]" id="cC-5" value="C-5"><input type="button" class="btn btn-success" value="C-5" class="cx"></td>
     </tr>
     <tr>
-      
+
     </tr>
   </table>
   <form action="kakunin_hayaimono.php" method="post">
-  <input type="submit" value="確認">
-  <input type="hidden" name="eventId" value="<?=$_GET['eventId'] ?>">
-  <input type="hidden" name="name" value="<?=$_GET['name'] ?>">
-  <input type="hidden" name="mail" value="<?=$_GET['mail'] ?>">
-  <input type="hidden" name="password" value="<?=$_GET['password'] ?>">
-  <input type="hidden" name="number" value="1" >
+    <input type="submit" value="確認">
+    <input type="hidden" name="eventId" value="<?= $_GET['eventId'] ?>">
+    <input type="hidden" name="name" value="<?= $_GET['name'] ?>">
+    <input type="hidden" name="mail" value="<?= $_GET['mail'] ?>">
+    <input type="hidden" name="pass" value="<?= $_GET['pass'] ?>">
+    <input type="hidden" name="number" value="1">
   </form>
 
   <script type="text/javascript">

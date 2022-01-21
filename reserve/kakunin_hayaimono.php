@@ -10,7 +10,7 @@
             <input type="hidden" name="eventId" value="<?=$_POST['eventId'] ?>">
             <input type="hidden" name="name" value="<?=$_POST['name'] ?>">
             <input type="hidden" name="mail" value="<?=$_POST['mail'] ?>">
-            <input type="hidden" name="password" value="<?=$_POST['password'] ?>">
+            <input type="hidden" name="pass" value="<?=$_POST['pass'] ?>">
             <input type="hidden" name="number" value="1" >
             </form>
 
