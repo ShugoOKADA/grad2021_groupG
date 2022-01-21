@@ -17,9 +17,11 @@ mysqli_query($link, $sql);
 
 mysqli_close($link);
 
-// $to = "taiga.20020110@gmail.com";
+// $to = $mail;
 // $subject = "予約完了";
-// $message = "ご予約頂き、誠にありがとうございます。予約が完了致しましたので、お知らせ致します。";
+// $message = "ご予約頂き、誠にありがとうございます。予約が完了致しましたので、お知らせ致します。\n";
+// $message += "イベント番号：".$eventId."\n";
+// $message += "席番号：".$number."\n";
 // $headers = "FROM: s.okada70101@gmail.com";
 // mail($to, $subject, $message, $headers);
 ?>
