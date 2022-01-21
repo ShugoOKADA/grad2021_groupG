@@ -15,9 +15,9 @@
     <p>〇は席を選べます</p>
     <p>✕は席を選べません</p>
     <table class="">
-        <?php for ($i = 0; $i < 10; $i++) { ?>
+        <?php for ($i = 0; $i < 5; $i++) { ?>
             <tr>
-                <?php for ($j = 0; $j < 10; $j++) { ?>
+                <?php for ($j = 0; $j < 7; $j++) { ?>
                     <td><input type="button" class="btn btn-success" onclick="javascript:toggle(this)" value="○"></td>
                 <?php } ?>
             </tr>
