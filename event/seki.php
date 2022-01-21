@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form action="seki_kakutei.php">
+    <form action="seki_kakutei.php">                                                                                                                            
     <p>〇は席を選べます</p>
     <p>✕は席を選べません</p>
     <table class="">
