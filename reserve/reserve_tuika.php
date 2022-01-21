@@ -10,7 +10,7 @@ if ($link == null) {
 $name = $_POST['name'];
 $mail = $_POST['mail'];
 $eventId = $_POST['eventId'];
-$pass = $_POST['password'];
+$pass = $_POST['pass'];
 $number = $_POST['number'];
 $sql = "INSERT INTO reserve (name, mail, eventId, pass, number) VALUES ('" . $name . "','" . $mail . "'," . $eventId . ",'" . $pass . "'," . $number . ")";
 mysqli_query($link, $sql);
