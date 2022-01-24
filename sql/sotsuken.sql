@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2022-01-18 08:06:19
+-- 生成日時: 2022-01-24 07:34:45
 -- サーバのバージョン： 10.4.11-MariaDB
 -- PHP のバージョン: 7.4.6
 
@@ -31,7 +31,8 @@ CREATE TABLE `event` (
   `id` int(11) NOT NULL,
   `name` varchar(64) NOT NULL,
   `date` date NOT NULL,
-  `size` int(11) NOT NULL,
+  `tate` int(11) NOT NULL,
+  `yoko` int(11) NOT NULL,
   `method` int(11) NOT NULL,
   `image` varchar(64) DEFAULT NULL,
   `address` varchar(64) DEFAULT NULL
@@ -41,12 +42,13 @@ CREATE TABLE `event` (
 -- テーブルのデータのダンプ `event`
 --
 
-INSERT INTO `event` (`id`, `name`, `date`, `size`, `method`, `image`, `address`) VALUES
-(1, '流山北運動会', '2021-12-01', 49, 1, '', 'hoge@gmail.com'),
-(24, '柏運動会', '2022-01-21', 56, 1, '', 'piyo@gmail.com'),
-(25, '柏運動会', '2022-01-20', 10, 1, 'a.jpg', 'hoge@gmail.com'),
-(26, '流山花火', '2022-01-14', 10, 1, '', 'hoge@gmail.com'),
-(27, '馬橋高校運動会', '2022-01-20', 9, 1, '', 'hoge@gmail.com');
+INSERT INTO `event` (`id`, `name`, `date`, `tate`, `yoko`, `method`, `image`, `address`) VALUES
+(1, '流山北運動会', '2021-12-01', 49, 1, 1, '', 'hoge@gmail.com'),
+(24, '柏運動会', '2022-01-21', 56, 1, 1, '', 'piyo@gmail.com'),
+(25, '柏運動会', '2022-01-20', 10, 1, 1, 'a.jpg', 'hoge@gmail.com'),
+(26, '流山花火', '2022-01-14', 10, 1, 1, '', 'hoge@gmail.com'),
+(27, '馬橋高校運動会', '2022-01-20', 9, 1, 1, '', 'hoge@gmail.com'),
+(28, '松戸運動会', '2022-01-27', 12, 12, 1, 'koba.img', 'hoge@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -96,7 +98,13 @@ INSERT INTO `userlist` (`id`, `name`, `mail`, `pass`) VALUES
 (2, 'ふじ', 'fuji@gmail.com', 'fujipass'),
 (3, 'ふじしろ', 'fuji@gmail.com', 'fujipass'),
 (4, 'ふじしろ', '', 'fujipass'),
-(5, '藤代翔', '', 'fujipass');
+(5, '藤代翔', '', 'fujipass'),
+(6, 'コバヤシタイガ', '', 'fujipass'),
+(7, 'コバヤシタイガ', '', 'a'),
+(8, 'コバヤシタイガ', '', 'a'),
+(9, 'コバヤシタイガ', '', 'a'),
+(10, 'jk大好き小林', 'piyo@gmail.com', 'a'),
+(11, 'jk', '', 'aa');
 
 --
 -- ダンプしたテーブルのインデックス
@@ -128,7 +136,7 @@ ALTER TABLE `userlist`
 -- テーブルのAUTO_INCREMENT `event`
 --
 ALTER TABLE `event`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- テーブルのAUTO_INCREMENT `reserve`
@@ -140,7 +148,7 @@ ALTER TABLE `reserve`
 -- テーブルのAUTO_INCREMENT `userlist`
 --
 ALTER TABLE `userlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

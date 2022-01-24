@@ -9,11 +9,12 @@ if ($link == null) {
 
 $name = $_POST['name'];
 $date = $_POST['date'];
-$size = $_POST['size'];
+$tate = $_POST['tate'];
+$yoko = $_POST['yoko'];
 $method = $_POST['method'];
 $image = $_POST['image'];
 $address = $_POST['address'];
-$sql = "INSERT INTO event (name, date, size, method, image, address) VALUES ('" . $name . "','" . $date . "'," . $size . "," . $method . ",'" . $image . "','" . $address . "')";
+$sql = "INSERT INTO event (name, date, tate, yoko, method, image, address) VALUES ('" . $name . "','" . $date . "'," . $tate . "," . $yoko . "," . $method . ",'" . $image . "','" . $address . "')";
 mysqli_query($link, $sql);
 
 mysqli_close($link);
