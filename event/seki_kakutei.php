@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="../top_syusai.php">
+    <form action="../top.php">
     <p>修正完了</p>
      <p><input class="btn btn-success" type="submit" value="TOPへ"></p>
     </form>
