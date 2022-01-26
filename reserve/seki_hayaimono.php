@@ -33,7 +33,7 @@
         <tr>
           <?php for ($j = 0; $j < $yoko; $j++) { ?>
             <?php $num++;  ?>
-            <td><label class="btn btn-success"><input type="radio"name="number" value="<?= $num ?>"><?= $num ?></label></td>
+            <td><label class="btn btn-success"><input type="radio" name="number" value="<?= $num ?>"><?= $num ?></label></td>
 
           <?php } ?>
         </tr>
