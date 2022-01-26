@@ -5,7 +5,7 @@
             <div class="col mb-5">
                 <div class="card h-100">
                     <!-- Product image-->
-                    <img class="card-img-top" src=".jpeg" alt="..." />
+                    <img class="card-img-top" src="image/user.png" alt="..." />
                     <!-- Product details-->
                     <div class="card-body p-4">
                         <div class="text-center">
@@ -23,7 +23,7 @@
             <div class="col mb-5">
                 <div class="card h-100">
                     <!-- Product image-->
-                    <img class="card-img-top" src=".jpeg" alt="..." />
+                    <img class="card-img-top" src="image/touroku.png" alt="..." />
                     <!-- Product details-->
                     <div class="card-body p-4">
                         <div class="text-center">
@@ -36,12 +36,11 @@
                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="event/login_syusai.php">イベントを登録</a></div>
                     </div>
                 </div>
-                </div>
             </div>
             <div class="col mb-5">
                 <div class="card h-100">
                     <!-- Product image-->
-                    <img class="card-img-top" src=".jpeg" alt="..." />
+                    <img class="card-img-top" src="image/kokki.png" alt="..." />
                     <!-- Product details-->
                     <div class="card-body p-4">
                         <div class="text-center">
