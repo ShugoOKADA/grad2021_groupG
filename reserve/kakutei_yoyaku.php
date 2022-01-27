@@ -21,9 +21,10 @@ mysqli_close($link);
 ?>
 <!-- Section-->
         <section class="py-5">
+        <form method="post" action="../top.php">
         <p> への内容の予約を取り消しました。</p>
 
-    <input type="button" onclick="location.href='../top.php'" value="TOPへ">
+        <button type="submit" class="btn btn-success">TOPへ</a></button>
         </section>
        
      <?php require_once("../footer.php");?>
