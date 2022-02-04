@@ -14,7 +14,6 @@ $id = $_GET['id'];
 $mail = $_GET['mail'];
 
 $sql = "DELETE FROM reserve WHERE eventId=" . $id . " AND mail='" . $mail . "'";
-print $sql;
 
 mysqli_query($link, $sql);
 mysqli_close($link);

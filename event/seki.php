@@ -35,7 +35,6 @@
                     <?php } ?>
                 </tr>
             <?php } ?>
-
         </table>
         <p><input class="btn btn-success" type="submit" value="確定"></p>
         <script lang="javascript">
