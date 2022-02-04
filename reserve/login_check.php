@@ -18,12 +18,11 @@ $result = mysqli_query($link, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $pass = $row['pass'];
 
-if($_POST['password'] == $pass || $_POST['address']=='hoge@gmail.com' || $_POST['address']=='piyo@gmail.com' || $_POST['address']=='koba@gmail.com'){
+if ($_POST['password'] == $pass && ($mail != "" && $pass != "")) {
 
-    $msg = "location: /grad2021_groupG/reserve/itiran_yoyaku.php?address=".$_POST['address'];
+    $msg = "location: /grad2021_groupG/reserve/itiran_yoyaku.php?address=" . $_POST['address'];
     header($msg);
-
 } else {
-    print($pass);
+    print("だめ".$pass);
 }
 mysqli_close($link);

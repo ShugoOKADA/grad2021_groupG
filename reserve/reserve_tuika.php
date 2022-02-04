@@ -16,13 +16,12 @@ $sql = "INSERT INTO reserve (name, mail, eventId, pass, number) VALUES ('" . $na
 mysqli_query($link, $sql);
 
 mysqli_close($link);
-
-#$to = $mail;
-#$subject = "予約完了";
-#$message = "ご予約頂き、誠にありがとうございます。予約が完了致しましたので、お知らせ致します。\n";
-#$message += "イベント番号：".$eventId."\n";
-#$message += "席番号：".$number."\n";
-#$headers = "FROM: s.okada70101@gmail.com";
-#mail($to, $subject, $message, $headers);
+$to = $mail;
+$subject = "予約完了";
+$message = "ご予約頂き、誠にありがとうございます。予約が完了致しましたので、お知らせ致します。\n";
+$message .= "イベント番号：".$eventId."\n";
+$message .= "席番号：".$number."\n";
+$headers = "FROM: s.okada70101@gmail.com";
+mail($to, $subject, $message, $headers);
 ?>
 <a href="./kakutei_hayaimono.php">次へ</a>
