@@ -23,15 +23,33 @@
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $tate = $row['tate'];
     $yoko = $row['yoko'];
+    $result = mysqli_query($link, "SELECT * FROM zaseki where eventId=" . $_GET['eventId'] . " ORDER BY sekiban");
+
+    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+        $rows[] = $row;
+    }
+    //print_r($rows);
+    $tukaeru = array_column($rows, 'tukaeru');
+    // print_r($tukaeru);
     ?>
     <form action="seki_kakutei.php">
         <p>〇は席を選べます</p>
         <p>✕は席を選べません</p>
         <table class="">
-            <?php for ($i = 0; $i < $tate; $i++) { ?>
+            <?php $count = 0; ?>
+            <?php for ($i = 1; $i <= $tate; $i++) { ?>
                 <tr>
-                    <?php for ($j = 0; $j < $yoko; $j++) { ?>
-                        <td><input type="button" class="btn btn-success" onclick="javascript:toggle(this)" value="○"></td>
+                    <?php for ($j = 1; $j <= $yoko; $j++) {
+                        if ($tukaeru[$count++] == 1) {
+                    ?>
+                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value="○"></td>
+                        <?php
+                        } else {
+                        ?>
+                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value="✕"></td>
+                        <?php
+                        }
+                        ?>
                     <?php } ?>
                 </tr>
             <?php } ?>
