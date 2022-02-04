@@ -12,6 +12,16 @@ $name = $_POST['name'];
 $mail = $_POST['mail'];
 $pass = $_POST['password'];
 
+if ($mail == "" || $pass == "") {
+    //print("だめ".$pass);
+    mysqli_close($link);
+    header("location: ./touroku.php?eventId=" . $id);
+    //header("location: ./login_syusai_error.php");
+
+}
+
+
+
 $sql = "INSERT INTO userlist(name, mail, pass) VALUES('" . $name . "','" . $mail . "','" . $pass . "')";
 
 
@@ -24,5 +34,5 @@ if ($result) {
     header($msg);
 } else {
 
-    header("location: ./touroku_syusai.php");
+    header("location: ./touroku.php?eventId=" . $id);
 }
