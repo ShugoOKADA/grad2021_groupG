@@ -24,6 +24,25 @@
   $tate = $row['tate'];
   $yoko = $row['yoko'];
   ?>
+        <table class="">
+            <?php $count = 0; ?>
+            <?php for ($i = 1; $i <= $tate; $i++) { ?>
+                <tr>
+                    <?php for ($j = 1; $j <= $yoko; $j++) {
+                        if ($tukaeru[$count++] == 1) {
+                    ?>
+                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value=disabled</td>
+                        <?php
+                        } else {
+                        ?>
+                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value=></td>
+                        <?php
+                        }
+                        ?>
+                    <?php } ?>
+                </tr>
+            <?php } ?>
+        </table>
   <form action="kakunin_hayaimono.php" method="POST">
     <p>〇は席を選べます</p>
     <p>✕は席を選べません</p>
@@ -33,7 +52,7 @@
         <tr>
           <?php for ($j = 0; $j < $yoko; $j++) { ?>
             <?php $num++;  ?>
-            <td><label class="btn btn-info"><input type="radio" name="number" value="<?= $num ?>"><?= $num ?></label></td>
+            <td><label class="btn btn-info"><input type="radio" name="number" value="<?= $num ?>" disabled><?= $num ?></label></td>
 
           <?php } ?>
         </tr>
@@ -57,7 +76,7 @@
   </form>
 </body>
 <style>
-  .btn-info{
+  .btn-info {
     width: 65px;
     height: 30px;
   }
