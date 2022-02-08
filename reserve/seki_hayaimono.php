@@ -23,56 +23,42 @@
   $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
   $tate = $row['tate'];
   $yoko = $row['yoko'];
-  ?>
-        <table class="">
-            <?php $count = 0; ?>
-            <?php for ($i = 1; $i <= $tate; $i++) { ?>
-                <tr>
-                    <?php for ($j = 1; $j <= $yoko; $j++) {
-                        if ($tukaeru[$count++] == 1) {
-                    ?>
-                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value=disabled</td>
-                        <?php
-                        } else {
-                        ?>
-                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value=></td>
-                        <?php
-                        }
-                        ?>
-                    <?php } ?>
-                </tr>
-            <?php } ?>
-        </table>
-  <form action="kakunin_hayaimono.php" method="POST">
-    <p>〇は席を選べます</p>
-    <p>✕は席を選べません</p>
-    <table class="">
-      <?php $num = 0; ?>
-      <?php for ($i = 0; $i < $tate; $i++) { ?>
-        <tr>
-          <?php for ($j = 0; $j < $yoko; $j++) { ?>
-            <?php $num++;  ?>
-            <td><label class="btn btn-info"><input type="radio" name="number" value="<?= $num ?>" disabled><?= $num ?></label></td>
+  $result = mysqli_query($link, "SELECT * FROM zaseki where eventId=" . $_GET['eventId'] . " ORDER BY sekiban");
 
+  while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+    $rows[] = $row;
+  }
+  //print_r($rows);
+  $tukaeru = array_column($rows, 'tukaeru');
+  // print_r($tukaeru);
+  ?>
+  <table class="">
+    <form action="kakunin_hayaimono.php" method="POST">
+      <?php $count = 0; ?>
+      <?php for ($i = 1; $i <= $tate; $i++) { ?>
+        <tr>
+          <?php for ($j = 1; $j <= $yoko; $j++) {
+            if ($tukaeru[$count++] == 1) {
+          ?>
+              <td><label class="btn btn-info"><input type="radio" name="number" value="<?= $count ?>"><?= $count ?></label></td>
+            <?php
+            } else {
+            ?>
+              <td><label class="btn btn-info"><input type="radio" name="number" value="<?= $count ?>" disabled><?= $count ?></label></td>
+            <?php
+            }
+            ?>
           <?php } ?>
         </tr>
       <?php } ?>
+  </table>
 
-    </table>
-    <input type="hidden" name="eventId" value="<?= $_GET['eventId'] ?>">
-    <input type="hidden" name="name" value="<?= $_GET['name'] ?>">
-    <input type="hidden" name="mail" value="<?= $_GET['mail'] ?>">
-    <input type="hidden" name="pass" value="<?= $_GET['pass'] ?>">
-    <p><input class="btn btn-success" type="submit" value="確定"></p>
-    <script lang="javascript">
-      function toggle(target) {
-        if (target.value == "○") {
-          target.value = "✕";
-        } else {
-          target.value = "○";
-        }
-      }
-    </script>
+  </table>
+  <input type="hidden" name="eventId" value="<?= $_GET['eventId'] ?>">
+  <input type="hidden" name="name" value="<?= $_GET['name'] ?>">
+  <input type="hidden" name="mail" value="<?= $_GET['mail'] ?>">
+  <input type="hidden" name="pass" value="<?= $_GET['pass'] ?>">
+  <p><input class="btn btn-success" type="submit" value="確定"></p>
   </form>
 </body>
 <style>

@@ -32,7 +32,7 @@
     $tukaeru = array_column($rows, 'tukaeru');
     // print_r($tukaeru);
     ?>
-    <form action="seki_kakutei.php">
+    <form action="seki_kakutei.php" method="POST">
         <p>〇は席を選べます</p>
         <p>✕は席を選べません</p>
         <table class="">
@@ -42,17 +42,20 @@
                     <?php for ($j = 1; $j <= $yoko; $j++) {
                         if ($tukaeru[$count++] == 1) {
                     ?>
-                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value="○"></td>
+                            <td><input type="text" class="btn btn-info" onclick="javascript:toggle(this)" name="zaseki<?= $count ?>" value="○"></td>
                         <?php
                         } else {
                         ?>
-                            <td><input type="button" class="btn btn-info" onclick="javascript:toggle(this)" value="✕"></td>
+                            <td><input type="text" class="btn btn-info" onclick="javascript:toggle(this)" name="zaseki<?= $count ?>" value="✕"></td>
                         <?php
                         }
                         ?>
                     <?php } ?>
                 </tr>
             <?php } ?>
+            <input type="hidden" name="eventId" value="<?= $_GET['eventId'] ?>">
+            <input type="hidden" name="tate" value="<?= $tate ?>">
+            <input type="hidden" name="yoko" value="<?= $yoko ?>">
         </table>
         <p><input class="btn btn-success" type="submit" value="確定"></p>
         <script lang="javascript">
@@ -69,4 +72,7 @@
 </body>
 
 </html>
+<style>
+    
+</style>
 <?php require_once("../footer.php"); ?>
