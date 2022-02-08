@@ -58,6 +58,7 @@
             <input type="hidden" name="yoko" value="<?= $yoko ?>">
         </table>
         <p><input class="btn btn-success" type="submit" value="確定"></p>
+        <p><input class="btn btn-success" type="submit" value="抽選"></p>
         <script lang="javascript">
             function toggle(target) {
                 if (target.value == "○") {
@@ -73,6 +74,6 @@
 
 </html>
 <style>
-    
+
 </style>
 <?php require_once("../footer.php"); ?>
