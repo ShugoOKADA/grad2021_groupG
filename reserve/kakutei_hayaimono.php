@@ -6,8 +6,7 @@
                 <h2>予約情報</h2>
                 <table class="input">
                         <tr>
-                                <th>予約番号</th>
-                                <td>xxxx</td>
+                                <p>座席番号<?= $_GET['number'] ?>です。</p>
                         </tr>
                 </table>
 
