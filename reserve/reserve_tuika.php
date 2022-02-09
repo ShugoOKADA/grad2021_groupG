@@ -25,4 +25,4 @@ $message .= "席番号：".$number."\n";
 $headers = "FROM: s.okada70101@gmail.com";
 mail($to, $subject, $message, $headers);*/
 ?>
-<a href="./kakutei_hayaimono.php">次へ</a>
+<a href="./kakutei_hayaimono.php?number=<?= $number ?>">次へ</a>
