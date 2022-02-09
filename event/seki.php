@@ -58,7 +58,7 @@
             <input type="hidden" name="yoko" value="<?= $yoko ?>">
         </table>
         <p><input class="btn btn-success" type="submit" value="確定"></p>
-        <p><input class="btn btn-success" type="submit" value="抽選"></p>
+
         <script lang="javascript">
             function toggle(target) {
                 if (target.value == "○") {
@@ -70,6 +70,7 @@
             }
         </script>
     </form>
+    <p><a href="chuusen_syusai.php?eventId=<?= $_GET['eventId'] ?>"><input class="btn btn-success" type="button" value="抽選"></a></p>
 </body>
 
 </html>

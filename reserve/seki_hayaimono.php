@@ -23,6 +23,7 @@
   $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
   $tate = $row['tate'];
   $yoko = $row['yoko'];
+  $method = $row['method'];
   $result = mysqli_query($link, "SELECT * FROM zaseki where eventId=" . $_GET['eventId'] . " ORDER BY sekiban");
 
   while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -33,7 +34,12 @@
   // print_r($tukaeru);
   ?>
   <table class="">
-    <form action="kakunin_hayaimono.php" method="POST">
+    <?php if ($method == 1) {
+      $path = "kakunin_hayaimono.php";
+    } else {
+      $path = "kakunin_chuusen.php";
+    } ?>
+    <form action="<?= $path ?>" method="POST">
       <?php $count = 0; ?>
       <?php for ($i = 1; $i <= $tate; $i++) { ?>
         <tr>
