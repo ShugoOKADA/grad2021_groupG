@@ -48,14 +48,21 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
     for ($i = 0; $i < count($rows); $i++) {
         $name = $rows[$i]['name'];
         $mail = $rows[$i]['mail'];
+        $pass = $rows[$i]['pass'];
+        $number = $rows[$i]['number'];;
         print("<p>" . $name . " " . $mail . " ");
         if ($rows[$i]['number'] != $prev_num) {
             print("あたり</p>");
+            $sql = "INSERT INTO reserve (name, mail, eventId, pass, number) VALUES ('" . $name . "','" . $mail . "'," . $eventId . ",'" . $pass . "'," . $number . ")";
+            mysqli_query($link, $sql);
             $prev_num = $rows[$i]['number'];
         } else {
             print("はずれ</p>");
         }
     }
+    $sql = "DELETE FROM chuusen WHERE eventId=" . $eventId;
+    mysqli_query($link, $sql);
+    mysqli_close($link);
     ?>
     <p><a href="../top.php"><input class="btn btn-success" type="button" value="次へ"></a></p>
 </body>
